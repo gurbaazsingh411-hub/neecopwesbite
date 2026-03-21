@@ -8,12 +8,20 @@ import Highlight from "@/components/Highlight";
 
 const mediaCategories = [
     "All",
+    "Energy",
     "International Dialogue 2026",
     "Startup Summit",
     "Policy Roundtables",
     "International Dialogues"
 ];
 const mediaData = [
+    // Energy
+    { id: 101, category: "Energy", title: "Power Supply Framework", image: "/assets/media/energy/energy-1.jpg" },
+    { id: 102, category: "Energy", title: "NCR Baseline Assessment", image: "/assets/media/energy/energy-2.jpg" },
+    { id: 103, category: "Energy", title: "Energy Infrastructure", image: "/assets/media/energy/energy-3.jpg" },
+    { id: 104, category: "Energy", title: "Power Sector Consultation", image: "/assets/media/energy/energy-4.jpg" },
+    { id: 105, category: "Energy", title: "Sustainable Governance", image: "/assets/media/energy/energy-5.jpg" },
+
     // International Dialogue 2026
     { id: 201, category: "International Dialogue 2026", title: "Global Cooperation", image: "/assets/media/international-dialogue-2026/dialogue-1.jpg" },
     { id: 202, category: "International Dialogue 2026", title: "Economic Policy Summit", image: "/assets/media/international-dialogue-2026/dialogue-2.jpg" },
