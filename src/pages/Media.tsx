@@ -8,6 +8,7 @@ import Highlight from "@/components/Highlight";
 
 const mediaCategories = [
     "All",
+    "Field Work",
     "Energy",
     "International Dialogue 2026",
     "Startup Summit",
@@ -15,6 +16,17 @@ const mediaCategories = [
     "International Dialogues"
 ];
 const mediaData = [
+    // Field Work
+    { id: 501, category: "Field Work", title: "Field Work 1", image: "/assets/media/field-work/field-work-1.jpg" },
+    { id: 502, category: "Field Work", title: "Field Work 2", image: "/assets/media/field-work/field-work-2.jpg" },
+    { id: 503, category: "Field Work", title: "Field Work 3", image: "/assets/media/field-work/field-work-3.jpg" },
+    { id: 504, category: "Field Work", title: "Field Work 4", image: "/assets/media/field-work/field-work-4.jpg" },
+    { id: 505, category: "Field Work", title: "Field Work 5", image: "/assets/media/field-work/field-work-5.jpg" },
+    { id: 506, category: "Field Work", title: "Field Work 6", image: "/assets/media/field-work/field-work-6.jpg" },
+    { id: 507, category: "Field Work", title: "Field Work 7", image: "/assets/media/field-work/field-work-7.jpg" },
+    { id: 508, category: "Field Work", title: "Field Work 8", image: "/assets/media/field-work/field-work-8.jpg" },
+    { id: 509, category: "Field Work", title: "Field Work 9", image: "/assets/media/field-work/field-work-9.jpg" },
+
     // Energy
     { id: 101, category: "Energy", title: "Power Supply Framework", image: "/assets/media/energy/energy-1.jpg" },
     { id: 102, category: "Energy", title: "NCR Baseline Assessment", image: "/assets/media/energy/energy-2.jpg" },
