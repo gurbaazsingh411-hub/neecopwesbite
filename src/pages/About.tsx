@@ -50,7 +50,7 @@ const About = () => {
               { 
                 title: "International Economic & Policy Dialogue", 
                 desc: "Structured academic–policy platforms for comparative research and international engagement.",
-                category: "International Dialogues"
+                category: "Global Dialogues"
               }
             ].map((domain, idx) => (
               <Link 

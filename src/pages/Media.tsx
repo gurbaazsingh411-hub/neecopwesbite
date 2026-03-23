@@ -33,19 +33,7 @@ const mediaData = [
     { id: 104, category: "Energy", title: "Power Sector Consultation", image: "/assets/media/energy/energy-4.jpg" },
     { id: 105, category: "Energy", title: "Sustainable Governance", image: "/assets/media/energy/energy-5.jpg" },
 
-    // International Dialogue 2026
-    { id: 201, category: "International Dialogue 2026", title: "Global Cooperation", image: "/assets/media/international-dialogue-2026/dialogue-1.jpg" },
-    { id: 202, category: "International Dialogue 2026", title: "Economic Policy Summit", image: "/assets/media/international-dialogue-2026/dialogue-2.jpg" },
-    { id: 203, category: "International Dialogue 2026", title: "Multilateral Engagement", image: "/assets/media/international-dialogue-2026/dialogue-3.jpg" },
-    { id: 204, category: "International Dialogue 2026", title: "Bilateral Strategy", image: "/assets/media/international-dialogue-2026/dialogue-4.jpg" },
-    { id: 205, category: "International Dialogue 2026", title: "Policy Roundtable", image: "/assets/media/international-dialogue-2026/dialogue-5.jpg" },
-    { id: 206, category: "International Dialogue 2026", title: "Strategic Deliberation", image: "/assets/media/international-dialogue-2026/dialogue-6.jpg" },
-    { id: 207, category: "International Dialogue 2026", title: "Global Research Forum", image: "/assets/media/international-dialogue-2026/dialogue-7.jpg" },
-    { id: 208, category: "International Dialogue 2026", title: "Intergovernmental Dialogue", image: "/assets/media/international-dialogue-2026/dialogue-8.jpg" },
-    { id: 209, category: "International Dialogue 2026", title: "Resource Planning", image: "/assets/media/international-dialogue-2026/dialogue-9.jpg" },
-    { id: 210, category: "International Dialogue 2026", title: "Global Impact Study", image: "/assets/media/international-dialogue-2026/dialogue-10.jpg" },
-    { id: 211, category: "International Dialogue 2026", title: "Institutional Partnership", image: "/assets/media/international-dialogue-2026/dialogue-11.jpg" },
-
+    // International Dialogue 2026 hidden as per request
     {
         id: 1,
         category: "Startup Summit",
@@ -100,67 +88,7 @@ const mediaData = [
         title: "Summit Event 8",
         image: "/assets/media/startup-summit/IMG_9125.jpg"
     },
-    {
-        id: 10,
-        category: "International Dialogues",
-        title: "Global Dialogue 1",
-        image: "/assets/media/international-dialogues/DSC00070 (1).jpg"
-    },
-    {
-        id: 11,
-        category: "International Dialogues",
-        title: "Global Dialogue 2",
-        image: "/assets/media/international-dialogues/DSC00123 (1).jpg"
-    },
-    {
-        id: 12,
-        category: "International Dialogues",
-        title: "Policy Discussion 1",
-        image: "/assets/media/international-dialogues/DSC02331.jpg"
-    },
-    {
-        id: 13,
-        category: "International Dialogues",
-        title: "Policy Discussion 2",
-        image: "/assets/media/international-dialogues/DSC02332.jpg"
-    },
-    {
-        id: 14,
-        category: "International Dialogues",
-        title: "International Summit 1",
-        image: "/assets/media/international-dialogues/DSC02373.jpg"
-    },
-    {
-        id: 15,
-        category: "International Dialogues",
-        title: "International Summit 2",
-        image: "/assets/media/international-dialogues/DSC02386.jpg"
-    },
-    {
-        id: 16,
-        category: "International Dialogues",
-        title: "Strategic Meeting 1",
-        image: "/assets/media/international-dialogues/DSC02389.jpg"
-    },
-    {
-        id: 17,
-        category: "International Dialogues",
-        title: "Strategic Meeting 2",
-        image: "/assets/media/international-dialogues/DSC02390.jpg"
-    },
-    {
-        id: 18,
-        category: "International Dialogues",
-        title: "Power Project Dialogue",
-        image: "/assets/media/international-dialogues/Global Dialogue Neecop Power Project.jpg"
-    },
-    {
-        id: 19,
-        category: "International Dialogues",
-        title: "India-Europe Dialogue",
-        image: "/assets/media/international-dialogues/India-Europe Economic & Policy Dialogue (1).png"
-    },
-
+    // International Dialogues hidden as per request
     // Global Dialogues
     { id: 601, category: "Global Dialogues", title: "Global Dialogue 1", image: "/assets/media/global-dialogues/global-dialogue-1.jpg" },
     { id: 602, category: "Global Dialogues", title: "Global Dialogue 2", image: "/assets/media/global-dialogues/global-dialogue-2.jpg" },
@@ -171,7 +99,17 @@ const mediaData = [
     { id: 607, category: "Global Dialogues", title: "Global Dialogue 7", image: "/assets/media/global-dialogues/global-dialogue-7.jpg" },
     { id: 608, category: "Global Dialogues", title: "Global Dialogue 8", image: "/assets/media/global-dialogues/global-dialogue-8.jpg" },
     { id: 609, category: "Global Dialogues", title: "Global Dialogue 9", image: "/assets/media/global-dialogues/global-dialogue-9.jpg" },
-    { id: 610, category: "Global Dialogues", title: "Global Dialogue 10", image: "/assets/media/global-dialogues/global-dialogue-10.jpg" }
+    { id: 610, category: "Global Dialogues", title: "Global Dialogue 10", image: "/assets/media/global-dialogues/global-dialogue-10.jpg" },
+
+    // Policy Roundtables photos
+    { id: 401, category: "Policy Roundtables", title: "Roundtable 1", image: "/assets/media/policy-roundtables/roundtable-1.jpg" },
+    { id: 402, category: "Policy Roundtables", title: "Roundtable 2", image: "/assets/media/policy-roundtables/roundtable-2.jpg" },
+    { id: 403, category: "Policy Roundtables", title: "Roundtable 3", image: "/assets/media/policy-roundtables/roundtable-3.jpg" },
+    { id: 404, category: "Policy Roundtables", title: "Roundtable 4", image: "/assets/media/policy-roundtables/roundtable-4.jpg" },
+    { id: 405, category: "Policy Roundtables", title: "Roundtable 5", image: "/assets/media/policy-roundtables/roundtable-5.jpg" },
+    { id: 406, category: "Policy Roundtables", title: "Roundtable 6", image: "/assets/media/policy-roundtables/roundtable-6.jpg" },
+    { id: 407, category: "Policy Roundtables", title: "Roundtable 7", image: "/assets/media/policy-roundtables/roundtable-7.jpg" },
+    { id: 408, category: "Policy Roundtables", title: "Roundtable 8", image: "/assets/media/policy-roundtables/roundtable-8.jpg" }
 ];
 
 const Media = () => {
@@ -221,16 +159,6 @@ const Media = () => {
                     </motion.div>
                 </div>
             </section>
-// Policy Roundtables photos
-{ id: 401, category: "Policy Roundtables", title: "Roundtable 1", image: "/assets/media/policy-roundtables/roundtable-1.jpg" },
-{ id: 402, category: "Policy Roundtables", title: "Roundtable 2", image: "/assets/media/policy-roundtables/roundtable-2.jpg" },
-{ id: 403, category: "Policy Roundtables", title: "Roundtable 3", image: "/assets/media/policy-roundtables/roundtable-3.jpg" },
-{ id: 404, category: "Policy Roundtables", title: "Roundtable 4", image: "/assets/media/policy-roundtables/roundtable-4.jpg" },
-{ id: 405, category: "Policy Roundtables", title: "Roundtable 5", image: "/assets/media/policy-roundtables/roundtable-5.jpg" },
-{ id: 406, category: "Policy Roundtables", title: "Roundtable 6", image: "/assets/media/policy-roundtables/roundtable-6.jpg" },
-{ id: 407, category: "Policy Roundtables", title: "Roundtable 7", image: "/assets/media/policy-roundtables/roundtable-7.jpg" },
-{ id: 408, category: "Policy Roundtables", title: "Roundtable 8", image: "/assets/media/policy-roundtables/roundtable-8.jpg" },
-// Global Dialogues
             <SectionWrapper>
                 <div className="flex flex-wrap gap-3 mb-16 justify-center">
                     {mediaCategories.map((cat) => (
