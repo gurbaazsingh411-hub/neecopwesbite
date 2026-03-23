@@ -13,7 +13,8 @@ const mediaCategories = [
     "International Dialogue 2026",
     "Startup Summit",
     "Policy Roundtables",
-    "International Dialogues"
+    "International Dialogues",
+    "Global Dialogues"
 ];
 const mediaData = [
     // Field Work
@@ -219,7 +220,19 @@ const mediaData = [
     { id: 407, category: "Policy Roundtables", title: "Stakeholder Engagement", image: "/assets/media/roundtable/roundtable-7.jpg" },
     { id: 408, category: "Policy Roundtables", title: "Policy Roadmap", image: "/assets/media/roundtable/roundtable-8.jpg" },
     { id: 409, category: "Policy Roundtables", title: "Strategic Framework", image: "/assets/media/roundtable/roundtable-9.jpg" },
-    { id: 410, category: "Policy Roundtables", title: "Institutional Roundtable", image: "/assets/media/roundtable/roundtable-10.jpg" }
+    { id: 410, category: "Policy Roundtables", title: "Institutional Roundtable", image: "/assets/media/roundtable/roundtable-10.jpg" },
+
+    // Global Dialogues
+    { id: 601, category: "Global Dialogues", title: "Global Dialogue 1", image: "/assets/media/global-dialogues/global-dialogue-1.jpg" },
+    { id: 602, category: "Global Dialogues", title: "Global Dialogue 2", image: "/assets/media/global-dialogues/global-dialogue-2.jpg" },
+    { id: 603, category: "Global Dialogues", title: "Global Dialogue 3", image: "/assets/media/global-dialogues/global-dialogue-3.jpg" },
+    { id: 604, category: "Global Dialogues", title: "Global Dialogue 4", image: "/assets/media/global-dialogues/global-dialogue-4.jpg" },
+    { id: 605, category: "Global Dialogues", title: "Global Dialogue 5", image: "/assets/media/global-dialogues/global-dialogue-5.jpg" },
+    { id: 606, category: "Global Dialogues", title: "Global Dialogue 6", image: "/assets/media/global-dialogues/global-dialogue-6.jpg" },
+    { id: 607, category: "Global Dialogues", title: "Global Dialogue 7", image: "/assets/media/global-dialogues/global-dialogue-7.jpg" },
+    { id: 608, category: "Global Dialogues", title: "Global Dialogue 8", image: "/assets/media/global-dialogues/global-dialogue-8.jpg" },
+    { id: 609, category: "Global Dialogues", title: "Global Dialogue 9", image: "/assets/media/global-dialogues/global-dialogue-9.jpg" },
+    { id: 610, category: "Global Dialogues", title: "Global Dialogue 10", image: "/assets/media/global-dialogues/global-dialogue-10.jpg" }
 ];
 
 const Media = () => {
