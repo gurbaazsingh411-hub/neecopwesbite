@@ -38,7 +38,7 @@ const initiativeData: Record<string, any> = {
             "Research Consultants (Analytical Research)",
             "Field Investigators (On-ground Surveys)"
         ],
-        gallery: [ncr1, ncr2, ncr3, ncr4]
+        galleryLink: "/media?category=Energy"
     },
     "delhi-startup-policy": {
         title: <>Startup & <Highlight>Innovation</Highlight> Ecosystem <Highlight>Policy</Highlight></>,
