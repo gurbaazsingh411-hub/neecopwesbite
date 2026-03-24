@@ -46,9 +46,9 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-navy">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-black">
         <div className="absolute inset-0">
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             <motion.div
               key={currentSlide}
               initial={{ opacity: 0, scale: 1.05 }}
