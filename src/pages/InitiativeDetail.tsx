@@ -4,6 +4,8 @@ import SectionWrapper from "@/components/SectionWrapper";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Zap, Landmark, Globe, CheckCircle2, BarChart3, Microscope, ImageIcon } from "lucide-react";
 import Highlight from "@/components/Highlight";
+import ImageWithSkeleton from "@/components/ImageWithSkeleton";
+
 import ncr1 from "@/assets/ncr/DSC01584.JPG.jpeg";
 import ncr2 from "@/assets/ncr/DSC01648.JPG.jpeg";
 import ncr3 from "@/assets/ncr/DSC_0346.JPG.jpeg";
@@ -229,12 +231,12 @@ const InitiativeDetail = () => {
                                     transition={{ delay: idx * 0.1 }}
                                     className="group relative aspect-video overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl transition-all duration-500"
                                 >
-                                    <img
+                                    <ImageWithSkeleton
                                         src={typeof img === 'string' ? img : (img as any).src}
                                         alt={`${data.title} Gallery ${idx + 1}`}
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                        className="group-hover:scale-110"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 pointer-events-none">
                                         <p className="text-white text-sm font-medium">
                                             {typeof img === 'string' ? `Research Milestone View ${idx + 1}` : (img as any).caption}
                                         </p>

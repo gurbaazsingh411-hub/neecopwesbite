@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import SectionWrapper from "@/components/SectionWrapper";
-import { Camera, Image as ImageIcon } from "lucide-react";
+import { Camera, Image as ImageIcon, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import heroBg from "@/assets/hero-bg.jpg"; // Using existing hero bg for consistency if needed, or keeping it clean
 import Highlight from "@/components/Highlight";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Button } from "@/components/ui/button";
+import ImageWithSkeleton from "@/components/ImageWithSkeleton";
 
 const mediaCategories = [
     "All",
@@ -14,6 +16,7 @@ const mediaCategories = [
     "Policy Roundtables",
     "Global Dialogues"
 ];
+
 const mediaData = [
     // Field Work
     { id: 501, category: "Field Work", title: "Field Work 1", image: "/assets/media/field-work/field-work-1.jpg" },
@@ -112,10 +115,13 @@ const mediaData = [
     { id: 408, category: "Policy Roundtables", title: "Roundtable 8", image: "/assets/media/policy-roundtables/roundtable-8.jpg" }
 ];
 
+// Using shared ImageWithSkeleton component
+
 const Media = () => {
     const [searchParams, setSearchParams] = useSearchParams();
     const categoryQuery = searchParams.get("category");
     const [selectedCategory, setSelectedCategory] = useState("All");
+    const [visibleCount, setVisibleCount] = useState(9);
 
     useEffect(() => {
         if (categoryQuery && mediaCategories.includes(categoryQuery)) {
@@ -123,6 +129,7 @@ const Media = () => {
         } else {
             setSelectedCategory("All");
         }
+        setVisibleCount(9); // Reset visible count on category change
     }, [categoryQuery]);
 
     const handleCategoryChange = (cat: string) => {
@@ -134,9 +141,15 @@ const Media = () => {
         }
     };
 
+    const handleLoadMore = () => {
+        setVisibleCount((prev) => prev + 9);
+    };
+
     const filteredMedia = selectedCategory === "All"
         ? mediaData
         : mediaData.filter(item => item.category === selectedCategory);
+
+    const visibleMedia = filteredMedia.slice(0, visibleCount);
 
     return (
         <div className="min-h-screen bg-background text-foreground">
@@ -175,25 +188,37 @@ const Media = () => {
                     ))}
                 </div>
 
-                {filteredMedia.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {filteredMedia.map((item, idx) => (
-                            <motion.div
-                                key={item.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
-                                className="premium-card aspect-[4/3] bg-card rounded-3xl overflow-hidden group relative border border-border transition-all shadow-sm"
-                            >
-                                <img
-                                    src={item.image}
-                                    alt={item.title}
-                                    className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                            </motion.div>
-                        ))}
-                    </div>
+                {visibleMedia.length > 0 ? (
+                    <>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {visibleMedia.map((item, idx) => (
+                                <motion.div
+                                    key={item.id}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: (idx % 9) * 0.05 }}
+                                    className="premium-card aspect-[4/3] bg-card rounded-3xl overflow-hidden group relative border border-border transition-all shadow-sm"
+                                >
+                                    <ImageWithSkeleton src={item.image} alt={item.title} />
+                                </motion.div>
+                            ))}
+                        </div>
+
+                        {visibleCount < filteredMedia.length && (
+                            <div className="mt-16 flex justify-center">
+                                <Button
+                                    onClick={handleLoadMore}
+                                    variant="outline"
+                                    size="lg"
+                                    className="rounded-full px-8 py-6 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-bold group shadow-lg transition-all"
+                                >
+                                    Load More Works
+                                    <ChevronDown className="ml-2 h-4 w-4 transform group-hover:translate-y-1 transition-transform" />
+                                </Button>
+                            </div>
+                        )}
+                    </>
                 ) : (
                     <div className="text-center py-20 bg-muted/30 rounded-3xl border border-dashed border-border">
                         <ImageIcon className="h-16 w-16 text-muted-foreground/30 mx-auto mb-4" />
