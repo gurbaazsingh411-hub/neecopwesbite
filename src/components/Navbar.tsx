@@ -41,7 +41,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="Neecop Logo" className="h-8 w-auto object-contain dark:brightness-0 dark:invert" />
+          <img src="/logo.png" alt="Neecop Logo" className="h-8 w-auto object-contain" />
         </Link>
 
         {/* Desktop */}
