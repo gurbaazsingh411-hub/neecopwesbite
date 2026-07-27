@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center mb-4 group">
-              <img src="/logo.png" alt="Neecop Logo" className="h-8 w-auto object-contain brightness-0 invert" />
+              <img src="/logo.png" alt="Neecop Logo" className="h-8 w-auto object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Advancing India's energy and startup ecosystem through data-driven research and policy engagement.
